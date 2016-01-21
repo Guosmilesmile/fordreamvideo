@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+     android:background="#FAEEDE"
+    android:orientation="vertical" 
+    xmlns:app="http://schemas.android.com/apk/res/cn.edu.xmu.ForDream">
+
+ <RelativeLayout
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content" >
+               <info.hoang8f.widget.FButton
+            android:id="@+id/groupmessage_dialog_message"
+            android:layout_width="150dp"
+            android:layout_height="30dp"          
+            android:textColor="@android:color/white"
+            android:text="群组动态"
+            android:paddingLeft="10dp"
+            android:layout_alignParentLeft="true"
+            fbutton:shadowEnabled="true"
+            fbutton:buttonColor="#AC8969"
+            fbutton:shadowHeight="3dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right|top" />     
+     
+     
+     <info.hoang8f.widget.FButton
+            android:id="@+id/groupmessage_dialog_check"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:textColor="@android:color/white"
+            android:text="审核申请"
+            android:paddingLeft="10dp"
+            android:layout_toRightOf="@id/groupmessage_dialog_message"
+            android:layout_alignParentRight="true"
+            fbutton:shadowEnabled="true"
+            fbutton:buttonColor="#AC8969"
+            fbutton:shadowHeight="3dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right|top" />
+    
+ </RelativeLayout>   
+<ListView 
+    android:layout_width="fill_parent"
+    android:layout_height="150dp"
+    android:id="@+id/groupmessage_dialog_listview"
+    android:listSelector="#00000000">    
+</ListView>
+          <info.hoang8f.widget.FButton
+            android:id="@+id/groupmessage_dialog_close"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:textColor="@android:color/white"
+            android:text="关闭"
+            fbutton:shadowEnabled="true"
+            fbutton:buttonColor="#AC8969"
+            fbutton:shadowHeight="3dp"
+            android:layout_gravity="center|top" />
+</LinearLayout>

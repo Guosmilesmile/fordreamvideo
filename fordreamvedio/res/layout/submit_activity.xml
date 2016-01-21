@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+     android:background="#FAEEDE" >
+    
+  <RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="30dp"
+    android:orientation="horizontal"
+    android:background="@drawable/topbg" >
+   		<TextView 
+  		  android:layout_width="wrap_content"
+    	  android:layout_height="wrap_content"
+   		  android:text="取消"
+   		  android:id="@+id/submit_cancel_textView"
+   		  android:layout_alignParentLeft="true"
+   		  android:layout_gravity="center_vertical"
+   		  android:layout_centerVertical="true"
+   		  android:layout_marginLeft="5dp"
+   		  android:textColor="#00ffff"/>
+   	    <TextView 
+   		 android:layout_width="wrap_content"
+    	 android:layout_height="wrap_content"
+         android:text="@string/app_name"
+    	 android:layout_gravity="center"
+    	 android:layout_centerInParent="true"
+    	 android:textColor="#000000"/>
+
+   	    <TextView
+   	        android:layout_width="wrap_content"
+   	        android:layout_height="wrap_content"
+   	        android:text="发送"
+   	        android:id="@+id/submit_send_textView"
+   	        android:layout_alignParentRight="true"
+   	        android:layout_centerVertical="true"
+   	        android:layout_marginRight="5dp"
+   	        android:textColor="#00ffff" />
+      
+    </RelativeLayout>
+    
+     <LinearLayout 
+   	 android:layout_width="fill_parent"
+   	 android:layout_height="150dp"
+   	 android:orientation="vertical">  
+    <LinearLayout
+     android:layout_width="fill_parent"
+   	 android:layout_height="120dp"
+   	 android:orientation="horizontal">
+
+         <ImageView 
+   	        android:id="@+id/submit_videoimg"
+   	        android:layout_gravity="center_vertical"
+   	        android:layout_width="80dp"
+    	    android:layout_height="80dp"
+   	        android:layout_marginLeft="5dp"
+   	        />
+        <EditText
+            android:id="@+id/submit_editText1"
+            android:hint="介绍下这个视频吧..."
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:layout_marginLeft="10dp"
+            android:inputType="textMultiLine" 
+            android:background="@null" >
+			
+            <requestFocus android:layout_width="match_parent" />
+
+        </EditText>
+
+   	 
+        
+        
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	>
+
+  
+           <ImageView 
+   	        android:src="@drawable/submit_getposition"
+   	        android:layout_centerVertical="true"
+   	        android:layout_width="20dp"
+    	    android:layout_height="20dp"
+    	    android:layout_marginLeft="10dp"
+    	    android:id="@+id/submit_getPositionImage"
+   	        />  
+   	      <TextView
+   	          android:id="@+id/submit_positionTextView"
+   	          android:layout_width="180dp"
+   	          android:layout_height="wrap_content"
+   	          android:layout_centerVertical="true"
+   	          android:layout_marginLeft="5dp"
+   	          android:layout_toRightOf="@id/submit_getPositionImage"
+   	          android:singleLine="false"
+   	          android:text=""
+   	          android:textSize="@dimen/padding_medium" />
+	
+    	    <LinearLayout
+       		 android:layout_width="wrap_content"
+    		 android:layout_height="fill_parent"
+    		 android:orientation="horizontal"
+    		 android:layout_alignParentRight="true"
+    		 android:layout_marginRight="20dp"
+    		 android:id="@+id/submit_IsLock"
+				>
+    	    <ImageView 
+   	        android:src="@drawable/submit_publicimage"
+   	        android:layout_gravity="center_vertical"
+   	        android:layout_width="20dp"
+    	    android:layout_height="20dp"
+    	    android:id="@+id/submit_IsPublic"
+   	        android:layout_marginLeft="5dp"
+   	        /> 
+
+   	       <TextView
+   	         android:id="@+id/submit_isPublicTextView"
+   	         android:layout_width="wrap_content"
+   	         android:layout_height="wrap_content"
+   	         android:layout_gravity="center_vertical"
+   	         android:layout_marginLeft="10dp"
+   	         android:text="@string/public_friend"
+   	         android:textColor="@color/unlock_color" />
+	  
+    	    </LinearLayout>
+      
+        
+    </RelativeLayout>     
+         
+         
+     </LinearLayout>
+      <RelativeLayout 
+   		 android:layout_width="fill_parent"
+    	 android:layout_height="15dp"
+    	 android:background="#A97A72"> 
+		<ProgressBar 	    
+			android:layout_width="200dp" 
+	   		android:layout_height="12dp"
+	   		style="?android:attr/progressBarStyleHorizontal"
+	   		android:layout_alignParentLeft="true"
+	   		android:layout_marginLeft="50dp"
+	   		android:id="@+id/submit_uploadbar"
+	   		android:visibility="invisible"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@id/submit_uploadbar"
+           android:id="@+id/submit_processresult"
+           /> 
+
+           
+     </RelativeLayout>
+
+     <LinearLayout 
+    	android:layout_width="fill_parent"
+    	android:layout_height="90dp"
+    	android:orientation="vertical" >
+   	    <LinearLayout     	
+   	    android:layout_width="fill_parent"
+    	android:layout_height="44dp"
+    	android:orientation="horizontal"
+    	android:id="@+id/submit_add_classification">
+   	    <ImageView 
+			android:src="@drawable/submit_video_label"
+   	        android:layout_gravity="center_vertical"
+   	        android:layout_width="20dp"
+    	    android:layout_height="20dp"
+   	        android:layout_marginLeft="5dp"
+   	        />
+   	      <TextView 
+    		 android:layout_width="wrap_content"
+    	     android:layout_height="wrap_content"
+    	     android:layout_gravity="center_vertical"
+    	     android:layout_marginLeft="10dp"
+    	     android:id="@+id/submit_classificationTextView"
+    	     android:text="@string/submit_classificationOriginalString"/>	
+   	    </LinearLayout>
+   	     <LinearLayout 
+   	    android:layout_width="fill_parent"
+    	android:layout_height="2dp"
+    	android:background="#A97A72">
+   	         
+   	     </LinearLayout>
+   	      <LinearLayout 
+   	   		 android:layout_width="fill_parent"
+    		 android:layout_height="44dp"
+    		 android:id="@+id/submit_choose_group">
+    	 <ImageView 
+   	        android:src="@drawable/submit_groupimage"
+   	        android:layout_gravity="center_vertical"
+   	        android:layout_width="20dp"
+    	    android:layout_height="20dp"
+   	        android:layout_marginLeft="5dp"
+   	        />  
+   	       <TextView 
+    		 android:layout_width="wrap_content"
+    	     android:layout_height="wrap_content"
+    	     android:layout_gravity="center_vertical"
+    	     android:id="@+id/submit_addShareGroupTextView"
+    	     android:layout_marginLeft="10dp"
+    	     android:text="@string/submit_shareGroupOriginalString"/>	
+          
+   	      </LinearLayout>
+
+   	 </LinearLayout>
+          <LinearLayout 
+   		 android:layout_width="fill_parent"
+    	 android:layout_height="fill_parent"
+    	 android:orientation="vertical"
+    	 android:background="#FAEEDE">  
+    	     <LinearLayout 
+   	    android:layout_width="fill_parent"
+    	android:layout_height="2dp"
+    	android:background="#A97A72">
+   	         
+   	     </LinearLayout>   	 
+          <TextView 
+          	android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignParentTop="true"
+    	    android:layout_alignParentLeft="true"
+    	    android:layout_marginTop="8dp"
+    	    android:layout_marginLeft="3dp"
+    	    android:text="同时发表到：" 
+    	    android:id="@+id/submit_layout_textView" />
+          <RelativeLayout 
+   	   		android:layout_width="fill_parent"
+    		android:layout_height="80dp">
+    		<LinearLayout 
+    		android:layout_width="150dp"
+    	    android:layout_height="fill_parent"
+    	    android:id="@+id/submit_sinaweibo">
+    		 <ImageView 
+    		 android:layout_width="30dp"
+    	     android:layout_height="30dp"
+    	     android:src="@drawable/logo_sinaweibo"
+    	     android:layout_marginLeft="5dp"
+    	     android:layout_gravity="center_vertical"/>
+
+    		 <TextView
+    		     android:id="@+id/submit_sinaweiboTextView"
+    		     android:layout_width="wrap_content"
+    		     android:layout_height="wrap_content"
+    		     android:layout_gravity="center_vertical"
+    		     android:layout_marginLeft="5dp"
+    		     android:text="新浪微博"
+    		     android:textColor="@color/unchoose_color" />
+
+    		</LinearLayout>
+    		
+    		<LinearLayout 
+    		android:layout_width="150dp"
+    	    android:layout_height="fill_parent"
+    	    android:layout_alignParentRight="true"
+    	    android:id="@+id/submit_tencentweibo">
+    		 <ImageView 
+    		 android:layout_width="30dp"
+    	     android:layout_height="30dp"
+    	     android:src="@drawable/logo_tencentweibo"
+    	     android:layout_marginLeft="5dp"
+    	     android:layout_gravity="center_vertical"/>
+
+    		 <TextView
+    		     android:id="@+id/submit_tencentweiboTextView"
+    		     android:layout_width="wrap_content"
+    		     android:layout_height="wrap_content"
+    		     android:layout_gravity="center_vertical"
+    		     android:layout_marginLeft="5dp"
+    		     android:text="腾讯微博"
+    		     android:textColor="@color/unchoose_color" />
+
+    		</LinearLayout>
+             
+          </RelativeLayout>
+    	 <RelativeLayout 
+   	    	android:layout_width="fill_parent"
+    		android:layout_height="80dp">
+    		<LinearLayout 
+    		android:layout_width="150dp"
+    	    android:layout_height="fill_parent"
+    	    android:id="@+id/submit_renren">
+    		 <ImageView 
+    		 android:layout_width="30dp"
+    	     android:layout_height="30dp"
+    	     android:src="@drawable/logo_renren"
+    	     android:layout_marginLeft="5dp"
+    	     android:layout_gravity="center_vertical"/>    		 
+
+    		 <TextView
+    		     android:id="@+id/submit_renrenTextView"
+    		     android:layout_width="wrap_content"
+    		     android:layout_height="wrap_content"
+    		     android:layout_gravity="center_vertical"
+    		     android:layout_marginLeft="5dp"
+    		     android:text="人人"
+    		     android:textColor="@color/unchoose_color" />
+
+    		</LinearLayout>
+    		
+    		<LinearLayout 
+    		android:layout_width="150dp"
+    	    android:layout_height="fill_parent"
+    	    android:layout_alignParentRight="true"
+    	    android:id="@+id/submit_douban">
+    		 <ImageView 
+    		 android:layout_width="30dp"
+    	     android:layout_height="30dp"
+    	     android:src="@drawable/logo_douban"
+    	     android:layout_marginLeft="5dp"
+    	     android:layout_gravity="center_vertical"/>
+
+    		 <TextView
+    		     android:id="@+id/submit_doubanTextView"
+    		     android:layout_width="wrap_content"
+    		     android:layout_height="wrap_content"
+    		     android:layout_gravity="center_vertical"
+    		     android:layout_marginLeft="5dp"
+    		     android:text="豆瓣"
+    		     android:textColor="@color/unchoose_color" />
+
+    		</LinearLayout>              
+          </RelativeLayout>          
+       </LinearLayout>
+
+</LinearLayout>

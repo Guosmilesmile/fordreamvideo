@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="@drawable/reg_bt" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:src="@drawable/login_logo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/reg_et_bg"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/reg_username" />
+
+            <EditText
+                android:id="@+id/login_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入用户名"
+                android:paddingLeft="5dp"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/reg_et_bg"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/reg_pwd" />
+
+            <EditText
+                android:id="@+id/login_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:paddingLeft="5dp"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <Button
+                android:id="@+id/login_btn"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/reg_bt_bg"
+                android:text="登陆" />
+            <Button
+                android:id="@+id/login_reg_btn"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/reg_bt_bg"
+                android:text="注册" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+			
+            <ImageView
+                android:id="@+id/login_weibo_iv"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/logo_sinaweibo" 
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+            <ImageView
+                android:id="@+id/login_qq_iv"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/logo_qzone" 
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+            <ImageView
+                android:id="@+id/login_facebook_iv"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/logo_renren" 
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+            <ImageView
+                android:id="@+id/login_weixin_iv"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/logo_douban" 
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+            
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

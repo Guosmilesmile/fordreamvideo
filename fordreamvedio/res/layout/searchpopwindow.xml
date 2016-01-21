@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res/cn.edu.xmu.ForDream"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+ <RelativeLayout
+     android:layout_width="fill_parent"
+     android:layout_height="37dp"
+     android:background="@drawable/searchpopwindow_searchbarbackground">
+     <info.hoang8f.widget.FButton
+            android:id="@+id/searchpopwindow_searchimg"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:textColor="@android:color/white"
+            android:drawableLeft="@drawable/active_search_16"
+            android:paddingLeft="10dp"
+            android:layout_alignParentRight="true"
+            fbutton:shadowEnabled="true"
+            fbutton:buttonColor="#AC8969"
+            fbutton:shadowHeight="3dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right|top" />
+     
+     <EditText 
+         android:layout_width="fill_parent"
+         android:layout_height="37dp"
+         android:textSize="14dp"
+         android:singleLine="true"
+         android:imeOptions="actionSearch"
+         android:id="@+id/searchpopwindow_searchEdit"
+         android:background="@drawable/searchpopwindow_searchbarbackground"
+         android:text=""
+         android:layout_marginLeft="10dp"
+         android:layout_toLeftOf="@id/searchpopwindow_searchimg"
+         android:hint="要搜索什么呢..."
+         />
+ </RelativeLayout>
+</LinearLayout>

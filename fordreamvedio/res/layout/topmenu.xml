@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/topbg"
+     >
+<!-- android:background="#7fffd4" -->
+    <RelativeLayout 
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+       
+        android:id="@+id/topmenu_menulayout">
+    <ImageView
+        android:id="@+id/topmenu_menuImage"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/topmenu_appnameimg" 
+        />
+	<ImageView
+	    android:layout_width="100dp"
+        android:layout_height="4dp"
+        android:id="@+id/topmenu_selectmenubar"
+        android:layout_below="@id/topmenu_menuImage"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/topmenu_selectsquare"
+        android:layout_alignParentBottom="true"       
+        />   
+        
+    </RelativeLayout>
+ 
+
+       <RelativeLayout 
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+		android:layout_centerHorizontal="true"
+        android:id="@+id/topmenu_positionlayout">
+	   <ImageView
+        android:id="@+id/topmenu_positionImage"
+        android:layout_width="80dp"        
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/topmenu_square_title_img" />
+	   
+	   
+	   	<ImageView
+	    android:layout_width="80dp"
+        android:layout_height="4dp"
+        android:id="@+id/topmenu_selectpositionbar"
+        android:layout_below="@id/topmenu_positionImage"
+        android:scaleType="fitXY"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="1dp"
+        android:src="@drawable/topmenu_selectsquare"
+        android:layout_alignParentBottom="true"         
+       />	
+           
+           
+		</RelativeLayout>
+
+	 
+       <RelativeLayout 
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+		android:layout_alignParentRight="true"
+	    android:layout_marginRight="20dp"
+        android:id="@+id/topmenu_cameralayout">
+    	 <ImageView
+       	 android:id="@+id/topmenu_cameraImage"
+       	 android:layout_width="25dp"
+       	 android:layout_height="25dp"
+       	 android:layout_alignParentRight="true"
+       	 android:layout_centerVertical="true"
+       	 android:src="@drawable/topmenu_camera" />         
+       </RelativeLayout>  
+       
+       <RelativeLayout 
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+		android:layout_toLeftOf="@id/topmenu_cameralayout"
+		android:layout_marginRight="10dp"
+        android:id="@+id/topmenu_serachlayout"> 
+    	<ImageView
+       	 android:id="@+id/topmenu_serachImage"
+       	 android:layout_width="25dp"
+       	 android:layout_height="25dp"
+       	 android:layout_centerInParent="true"
+       	 android:src="@drawable/topmenu_search1" /> 
+	   	<ImageView
+	    android:layout_width="30dp"
+        android:layout_height="4dp"
+        android:id="@+id/topmenu_selectsearchbar"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/topmenu_serachImage"
+        android:src="@drawable/topmenu_selectsearch" 
+        android:scaleType="fitXY"    
+        android:layout_marginTop="3dp" 
+        android:layout_alignParentBottom="true"         
+       />        
+        </RelativeLayout>           	
+
+</RelativeLayout>

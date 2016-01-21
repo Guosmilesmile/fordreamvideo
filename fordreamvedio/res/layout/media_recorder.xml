@@ -1,0 +1,216 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black" >
+
+    <LinearLayout
+        android:id="@+id/recorder_flashlight_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="20dp"
+        android:background="#222222" >
+
+        <!-- <TextView
+            android:id="@+id/txtTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp" /> -->
+        
+        <Button
+            android:id="@+id/title_left"
+            android:layout_width="66dp"
+            android:layout_height="36dp"
+            android:background="@drawable/btn_recorder_cancel"
+            android:text="@string/record_camera_back"
+            android:textColor="#bbbbbb"
+            android:textSize="14dp" />
+        
+        <Button
+            android:id="@+id/recorder_flashlight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:drawableRight="@drawable/btn_recorder_flashlight" />
+
+        <!-- <TextView
+            android:id="@+id/title_text"
+            style="@style/TitleStyleCenter"
+            android:text="@string/record_camera_title" >
+        </TextView> -->
+        <View
+            android:layout_width="30dip"
+            android:layout_height="1dip"
+            android:layout_weight="1" />
+        
+        <Button
+            android:id="@+id/recorder_frontcamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        	android:layout_marginRight="15dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/btn_recorder_frontcamera" />
+        
+        <Button
+            android:id="@+id/title_right"
+            android:layout_width="66dp"
+            android:layout_height="36dp"
+            android:background="@drawable/btn_recorder_next"
+            android:enabled="false"
+            android:text="@string/record_camera_next"
+            android:textColor="#444444"
+            android:textSize="14dp" />
+        
+    </LinearLayout>
+
+    <cn.edu.xmu.ForDream.recorder.ProgressView
+        android:id="@+id/record_progress"
+        android:layout_width="match_parent"
+        android:layout_height="13dp"
+        android:layout_below="@+id/recorder_flashlight_parent" />
+
+    <LinearLayout
+        android:id="@+id/recorder_bottom_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#222222"
+        android:gravity="center_vertical"
+        android:paddingBottom="20dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="20dp"
+        android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/recorder_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#222222" >
+        
+        <Button
+            android:id="@+id/record_import"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/record_import_selector"
+            android:text="@string/record_camera_import"
+            android:textColor="@drawable/record_text_color_selector"
+            android:textSize="14sp" />
+        
+        <CheckedTextView
+            android:id="@+id/record_delay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="110dp"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/record_delay_selector"
+            android:text="@string/record_camera_delay"
+            android:textColor="@drawable/record_text_color_selector"
+            android:textSize="14sp" />
+        
+        <CheckedTextView
+            android:id="@+id/record_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center_horizontal"
+            android:layout_marginRight="110dp"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/record_filter_selector"
+            android:text="@string/record_camera_filter"
+            android:textColor="@drawable/record_text_color_selector"
+            android:textSize="14sp" />
+        
+        <CheckedTextView
+            android:id="@+id/record_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center_horizontal"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/record_delete_selector"
+            android:text="@string/record_camera_back_delete"
+            android:textColor="@drawable/record_text_color_selector"
+            android:textSize="14sp" />
+        
+    </RelativeLayout>
+    
+    	<HorizontalScrollView
+    	    android:id="@+id/record_filter_layout"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:background="#292929"
+    	    android:paddingBottom="5dip"
+    	    android:paddingRight="10dip"
+    	    android:paddingTop="5dip"
+    	    android:scrollbars="none"
+    	    android:visibility="gone" >
+
+                <RadioGroup
+                    android:id="@+id/record_filter_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+                </RadioGroup>
+            </HorizontalScrollView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/recorder_surface_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/recorder_bottom_container"
+        android:layout_below="@+id/record_progress" >
+
+        <com.yixia.camera.view.CameraNdkView
+            android:id="@+id/record_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    	<RelativeLayout
+    	    android:id="@+id/record_layout"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_below="@id/record_progress" >
+
+            <ImageView
+                android:id="@+id/record_tips_text"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="#7f000000"
+                android:clickable="false"
+                android:contentDescription="@string/imageview_content_description"
+                android:focusable="false"
+                android:scaleType="center" />
+
+        </RelativeLayout>
+	<ImageView
+        android:id="@+id/recorder_surface_delay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/record_layout"
+        android:layout_above="@+id/recorder_bottom_container"
+        android:background="#7f000000"
+        android:clickable="false"
+        android:focusable="false"
+        android:scaleType="center"  />
+</RelativeLayout>

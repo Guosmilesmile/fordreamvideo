@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="30dp"
+    android:orientation="horizontal" >
+
+    <ProgressBar android:id="@+id/c81_forthBar"
+        android:layout_width="30dp"
+    	android:layout_height="wrap_content"
+         style="?android:attr/progressBarStyle" /> 
+    <TextView android:layout_width="fill_parent"
+    android:layout_height="30dp"
+    android:gravity="center"
+    android:textSize="20sp"
+    android:text="@string/loading"
+    android:id="@+id/loadfooter_textView"
+    />
+</LinearLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="20dp"
+        android:background="#222222"  >
+
+        <Button
+            android:id="@+id/preview_title_left"
+            android:layout_width="66dp"
+            android:layout_height="36dp"
+            android:background="@drawable/btn_recorder_cancel"
+            android:text="@string/record_camera_back"
+            android:textColor="#bbbbbb"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="30dip"
+            android:layout_height="1dip"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/title_right"
+            android:layout_width="66dp"
+            android:layout_height="36dp"
+            android:background="@drawable/btn_recorder_next"
+            android:text="完成"
+            android:textColor="#444444"
+            android:onClick="onClick"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/record_layout"
+        android:layout_width="match_parent"
+        android:layout_height="200dip" >
+
+        <cn.edu.xmu.ForDream.recorder.VideoView
+            android:id="@+id/record_preview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/record_play"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/imageview_content_description"
+            android:src="@drawable/icn_play_big" />
+
+        <cn.edu.xmu.ForDream.recorder.FrameImageView
+            android:id="@+id/record_theme_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#222222"
+        android:gravity="center_vertical"
+        android:paddingBottom="5dip"
+        android:orientation="horizontal" >
+
+        <CheckedTextView
+            android:id="@+id/record_video_theme"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:drawableTop="@drawable/record_theme_selector"
+            android:gravity="center_horizontal"
+            android:text="@string/record_preview_theme"
+            android:textColor="@drawable/record_text_color_selector"
+            android:textSize="14sp" />
+        <!-- 占位 -->
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="1dip"
+            android:layout_weight="3" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#222222" >
+
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <cn.edu.xmu.ForDream.recorder.ThemeRadioButton
+                android:id="@+id/record_preview_theme_original"
+                style="@style/RecordThemeStyle"
+                android:checked="true"
+                android:drawableTop="@drawable/record_theme_original"
+                android:text="@string/record_preview_theme_original" />
+
+            <cn.edu.xmu.ForDream.recorder.ThemeRadioButton
+                android:id="@+id/record_preview_theme_news"
+                style="@style/RecordThemeStyle"
+                android:drawableTop="@drawable/record_theme_news"
+                android:text="@string/record_preview_theme_news" />
+
+            <cn.edu.xmu.ForDream.recorder.ThemeRadioButton
+                android:id="@+id/record_preview_theme_goddess"
+                style="@style/RecordThemeStyle"
+                android:drawableTop="@drawable/record_theme_goddess"
+                android:text="@string/record_preview_theme_goddess" />
+
+            <cn.edu.xmu.ForDream.recorder.ThemeRadioButton
+                android:id="@+id/record_preview_theme_recording"
+                style="@style/RecordThemeStyle"
+                android:drawableTop="@drawable/record_theme_recording"
+                android:text="@string/record_preview_theme_recording" />
+            
+            <cn.edu.xmu.ForDream.recorder.ThemeRadioButton
+                android:id="@+id/record_preview_theme_bsmall"
+                style="@style/RecordThemeStyle"
+                android:drawableTop="@drawable/record_theme_bsmall"
+                android:text="@string/record_preview_theme_bsmall" />
+        </RadioGroup>
+    </RelativeLayout>
+
+</LinearLayout>

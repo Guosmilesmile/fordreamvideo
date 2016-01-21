@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:background="@drawable/reg_bt"
+    android:layout_height="wrap_content"
+     >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="20dp"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户注册"
+                android:textColor="#ABABAB"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+      
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+            </LinearLayout>
+            
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/reg_et_bg"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <ImageView 
+                android:src="@drawable/reg_nickname"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                />
+
+            <EditText
+                android:id="@+id/autho_reg_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入昵称"
+                android:paddingLeft="5dp"
+                android:singleLine="true" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+            </LinearLayout>
+                    
+                <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/reg_et_bg"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <ImageView 
+                android:src="@drawable/reg_nickname"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                />
+
+            <EditText
+                android:id="@+id/autho_reg_schoolname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入学校"
+                android:paddingLeft="5dp"
+                android:singleLine="true" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+            </LinearLayout>
+            
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+    <Button
+        android:id="@+id/reg_btn"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:background="@drawable/reg_bt_bg"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="注册" />
+	</LinearLayout>
+    </LinearLayout>
+    
+
+</LinearLayout>
