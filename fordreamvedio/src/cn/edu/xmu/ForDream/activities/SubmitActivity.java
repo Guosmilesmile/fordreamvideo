@@ -471,7 +471,7 @@ public class SubmitActivity extends Activity{
 				//点击发送
 			case R.id.submit_send_textView:
 			{
-				
+				Log.d("gy", "click");
 				if(classificationTextView.getText().toString().equals(getString(R.string.submit_classificationOriginalString)))
 				{
 					showToastMessage("请选择视频分类");
@@ -711,8 +711,8 @@ public class SubmitActivity extends Activity{
 	 	 */
 		private void uploadFile(final File file) {
 			
-			if(!isUpload)
-			{
+			//if(!isUpload)
+			//{
 				isUpload=true;
 				
 				new Thread(new Runnable() {	
@@ -763,7 +763,7 @@ public class SubmitActivity extends Activity{
 				        }
 					}
 				}).start();
-			}
+			//}
 			
 		}
 		

@@ -2844,6 +2844,10 @@ public class SquareActivity extends Activity {
                 listView.onDropDownComplete(getString(R.string.update_at) + dateFormat.format(new Date()));
                 
             } else {
+            	if(null == result ){
+            		listView.onBottomComplete();
+            		return ;
+            	}
             	Log.i("bottom","size:"+result.size());
             	if(result.size()!=0)
 				{
