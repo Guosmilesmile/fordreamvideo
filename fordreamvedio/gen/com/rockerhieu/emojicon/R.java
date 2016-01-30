@@ -8,7 +8,7 @@ package com.rockerhieu.emojicon;
 
 public final class R {
 	public static final class attr {
-		public static final int emojiconSize = 0x7f010000;
+		public static final int emojiconSize = 0x7f010005;
 	}
 	public static final class drawable {
 		public static final int emoji_0023 = 0x7f020042;
@@ -897,16 +897,16 @@ public final class R {
 		public static final int orca_emoji_tab_dark_background = 0x7f0203fd;
 	}
 	public static final class id {
-		public static final int Emoji_GridView = 0x7f0b007e;
-		public static final int emojicon_icon = 0x7f0b007f;
-		public static final int emojis_backspace = 0x7f0b0087;
-		public static final int emojis_pager = 0x7f0b0081;
-		public static final int emojis_tab = 0x7f0b0080;
-		public static final int emojis_tab_0_people = 0x7f0b0082;
-		public static final int emojis_tab_1_nature = 0x7f0b0083;
-		public static final int emojis_tab_2_objects = 0x7f0b0084;
-		public static final int emojis_tab_3_cars = 0x7f0b0085;
-		public static final int emojis_tab_4_punctuation = 0x7f0b0086;
+		public static final int Emoji_GridView = 0x7f0a007e;
+		public static final int emojicon_icon = 0x7f0a007f;
+		public static final int emojis_backspace = 0x7f0a0087;
+		public static final int emojis_pager = 0x7f0a0081;
+		public static final int emojis_tab = 0x7f0a0080;
+		public static final int emojis_tab_0_people = 0x7f0a0082;
+		public static final int emojis_tab_1_nature = 0x7f0a0083;
+		public static final int emojis_tab_2_objects = 0x7f0a0084;
+		public static final int emojis_tab_3_cars = 0x7f0a0085;
+		public static final int emojis_tab_4_punctuation = 0x7f0a0086;
 	}
 	public static final class layout {
 		public static final int emojicon_grid = 0x7f03000f;
@@ -914,10 +914,10 @@ public final class R {
 		public static final int emojicons = 0x7f030011;
 	}
 	public static final class string {
-		public static final int app_name = 0x7f050000;
+		public static final int app_name = 0x7f070000;
 	}
 	public static final class styleable {
-		public static final int[] Emojicon = { 0x7f010000 };
+		public static final int[] Emojicon = { 0x7f010005 };
 		public static final int Emojicon_emojiconSize = 0;
 	}
 }
