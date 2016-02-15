@@ -8,19 +8,19 @@ package br.com.dina.ui;
 
 public final class R {
 	public static final class attr {
-		public static final int image = 0x7f010003;
-		public static final int subtitle = 0x7f010002;
-		public static final int title = 0x7f010001;
+		public static final int image = 0x7f010008;
+		public static final int subtitle = 0x7f010007;
+		public static final int title = 0x7f010006;
 	}
 	public static final class color {
-		public static final int base_end_color_default = 0x7f060002;
-		public static final int base_end_color_pressed = 0x7f060004;
-		public static final int base_start_color_default = 0x7f060001;
-		public static final int base_start_color_pressed = 0x7f060003;
-		public static final int rounded_container_border = 0x7f060000;
-		public static final int text_color_default = 0x7f060005;
-		public static final int text_color_pressed = 0x7f060006;
-		public static final int text_color_selector = 0x7f060040;
+		public static final int base_end_color_default = 0x7f050019;
+		public static final int base_end_color_pressed = 0x7f05001b;
+		public static final int base_start_color_default = 0x7f050018;
+		public static final int base_start_color_pressed = 0x7f05001a;
+		public static final int rounded_container_border = 0x7f050017;
+		public static final int text_color_default = 0x7f05001c;
+		public static final int text_color_pressed = 0x7f05001d;
+		public static final int text_color_selector = 0x7f050040;
 	}
 	public static final class drawable {
 		public static final int background_view_rounded_bottom = 0x7f020009;
@@ -57,23 +57,23 @@ public final class R {
 		public static final int uitableview_activity = 0x7f03003b;
 	}
 	public static final class string {
-		public static final int app_name = 0x7f050000;
-		public static final int hello = 0x7f050001;
+		public static final int app_name = 0x7f070000;
+		public static final int hello = 0x7f070001;
 	}
 	public static final class style {
-		public static final int UITableView = 0x7f070000;
-		public static final int content_page_large_count_text = 0x7f070009;
-		public static final int content_page_large_text = 0x7f070007;
-		public static final int content_page_small_text = 0x7f070008;
-		public static final int list_container = 0x7f070001;
-		public static final int list_item_bottom = 0x7f070004;
-		public static final int list_item_chevron = 0x7f070006;
-		public static final int list_item_middle = 0x7f070003;
-		public static final int list_item_single = 0x7f070005;
-		public static final int list_item_top = 0x7f070002;
+		public static final int UITableView = 0x7f080000;
+		public static final int content_page_large_count_text = 0x7f080009;
+		public static final int content_page_large_text = 0x7f080007;
+		public static final int content_page_small_text = 0x7f080008;
+		public static final int list_container = 0x7f080001;
+		public static final int list_item_bottom = 0x7f080004;
+		public static final int list_item_chevron = 0x7f080006;
+		public static final int list_item_middle = 0x7f080003;
+		public static final int list_item_single = 0x7f080005;
+		public static final int list_item_top = 0x7f080002;
 	}
 	public static final class styleable {
-		public static final int[] UIButton = { 0x7f010001, 0x7f010002, 0x7f010003 };
+		public static final int[] UIButton = { 0x7f010006, 0x7f010007, 0x7f010008 };
 		public static final int UIButton_image = 2;
 		public static final int UIButton_subtitle = 1;
 		public static final int UIButton_title = 0;
