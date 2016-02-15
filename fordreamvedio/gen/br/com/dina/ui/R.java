@@ -28,13 +28,13 @@ public final class R {
 		public static final int background_view_rounded_middle = 0x7f02000b;
 		public static final int background_view_rounded_single = 0x7f02000c;
 		public static final int background_view_rounded_top = 0x7f02000d;
-		public static final int button_text_color = 0x7f02002d;
-		public static final int chevron = 0x7f020030;
-		public static final int chevron_default = 0x7f020031;
-		public static final int chevron_default_down = 0x7f020032;
-		public static final int chevron_white = 0x7f020033;
-		public static final int chevron_white_down = 0x7f020034;
-		public static final int icon = 0x7f0203ae;
+		public static final int button_text_color = 0x7f02002e;
+		public static final int chevron = 0x7f020031;
+		public static final int chevron_default = 0x7f020032;
+		public static final int chevron_default_down = 0x7f020033;
+		public static final int chevron_white = 0x7f020034;
+		public static final int chevron_white_down = 0x7f020035;
+		public static final int icon = 0x7f0203af;
 	}
 	public static final class id {
 		public static final int buttonsContainer = 0x7f0b009f;
