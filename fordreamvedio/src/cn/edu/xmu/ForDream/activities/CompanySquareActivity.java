@@ -492,7 +492,7 @@ public class CompanySquareActivity extends Activity {
             	postMap.put("pagenum", String.valueOf(pagenum));
             	postMap.put("vedioclassificationid", String.valueOf(vedioclassificationid));
             	postMap.put("position", position);
-            	result=HttpUtils.postRequest(FinalUrl.GetVedioUrl, postMap);
+            	result=HttpUtils.postRequest(FinalUrl.GetVedioUrlOne, postMap);
             	Log.i("squareDATE",result);
             }
 

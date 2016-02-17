@@ -18,6 +18,7 @@ public class FinalUrl {
 	public static String LoginUrl=WEB+"user/loginto";								//登陆的url
 	public static String LogVideoUrl=WEB+"video/upload";							//上传视频的url
 	public static String GetVedioUrl=WEB+"video/videolist";							//获取视频的URL
+	public static String GetVedioUrlOne=WEB+"video/videolistone";					//获取企业视频的URL
 	public static String GetGroupVedioUrl=WEB+"group/getgrouplist";					//获取讨论组分区视频的URL
 	public static String GetClassficationUrl=WEB+"video/channellist";				//得到视频分类的url
 	public static String PostPlayNumUrl=WEB+"video/playvideo";						//通知服务器播放次数加1url

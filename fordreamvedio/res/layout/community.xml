@@ -1,82 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/community_layout"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:id="@+id/community_layout"
-    android:background="#FAEEDE"  >
-    <RelativeLayout 
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+    android:background="#FFFFFF" >
+
+    <RelativeLayout
+        android:id="@+id/community_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:src="@drawable/community_n_title" />
+    </RelativeLayout>
+
+    <RelativeLayout
         android:id="@+id/community_company_layout"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/community_block"
-        >
-      <ImageView 
-          android:id="@+id/community_company_imageview"
-          android:layout_width="100dp"
-          android:layout_height="100dp"
-          android:src="@drawable/community_company"
-          android:layout_centerInParent="true"
-          /> 
-       <TextView 
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:text="企业专区"
-           android:textSize="15dp"
-           android:layout_alignParentBottom="true"
-           android:layout_marginBottom="10dp"
-           android:layout_centerHorizontal="true"/>
-       
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/community_title_layout"
+        android:layout_centerHorizontal="true" >
+
+        <ImageView
+            android:id="@+id/community_company_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:src="@drawable/community_n_company" />
     </RelativeLayout>
-      <RelativeLayout 
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_centerHorizontal="true"
-        android:layout_toRightOf="@id/community_company_layout"
-        android:layout_marginLeft="20dp"
-        android:layout_alignTop="@id/community_company_layout"
+
+    <RelativeLayout
         android:id="@+id/community_school_layout"
-        android:background="@drawable/community_block">
-      <ImageView 
-          android:id="@+id/community_school_imageview"
-          android:layout_width="100dp"
-          android:layout_height="100dp"
-          android:src="@drawable/community_school"
-          android:layout_centerInParent="true"/> 
-       <TextView 
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:text="高校专区"
-           android:textSize="15dp"
-           android:layout_marginBottom="10dp"
-           android:layout_alignParentBottom="true"
-           android:layout_centerHorizontal="true"/>
-       
-    </RelativeLayout>
-        <RelativeLayout 
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
         android:layout_below="@id/community_company_layout"
-        android:layout_marginTop="20dp"
-        android:layout_alignLeft="@id/community_company_layout"
+        android:layout_centerHorizontal="true" >
+
+        <ImageView
+            android:id="@+id/community_school_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:src="@drawable/community_n_school" />
+    </RelativeLayout>
+
+    <RelativeLayout
         android:id="@+id/community_findfriend_layout"
-        android:background="@drawable/community_block">
-      <ImageView 
-          android:id="@+id/community_findfriend_imageview"
-          android:layout_width="100dp"
-          android:layout_height="100dp"
-          android:src="@drawable/community_findfriend"
-          android:layout_centerInParent="true"/> 
-       <TextView 
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:text="寻找伙伴"
-           android:textSize="15dp"
-           android:layout_marginBottom="10dp"
-           android:layout_alignParentBottom="true"
-           android:layout_centerHorizontal="true"/>
-       
-    </RelativeLayout>  
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/community_school_layout"
+        android:layout_centerHorizontal="true" >
+
+        <ImageView
+            android:id="@+id/community_findfriend_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:src="@drawable/community_n_findfriend" />
+    </RelativeLayout>
+
 </RelativeLayout>

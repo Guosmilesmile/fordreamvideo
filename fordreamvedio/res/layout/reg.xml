@@ -1,149 +1,142 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:background="@drawable/reg_bt"
-    android:layout_height="wrap_content"
-     >
-
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ececec" >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
-        android:layout_margin="20dp"
+        android:background="#ececec"
         android:orientation="vertical" >
-        <LinearLayout
+
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:orientation="horizontal"
+            android:layout_height="80dp"
+            android:background="@drawable/reg_title"
             android:padding="10dp" >
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="用户注册"
-                android:textColor="#ABABAB"
-                android:textSize="25sp" />
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@drawable/reg_et_bg"
-            android:orientation="horizontal"
-            android:padding="10dp" >
-
-            <ImageView 
-                android:src="@drawable/reg_username"
+            <ImageView
                 android:layout_width="30dp"
                 android:layout_height="wrap_content"
-                />
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/reg_n_back" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/corners_bg"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/reg_n_username" />
 
             <EditText
                 android:id="@+id/reg_username"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingLeft="5dp"
-                android:singleLine="true" 
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:background="@null"
                 android:hint="请输入用户名"
-                />
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textColor="#000000" />
         </LinearLayout>
-		 <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:orientation="horizontal"
-            android:padding="10dp" >
-            </LinearLayout>
-            
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@drawable/reg_et_bg"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/corners_bg"
             android:orientation="horizontal"
-            android:padding="10dp" >
+            android:padding="5dp" >
 
-            <ImageView 
-                android:src="@drawable/reg_pwd"
+            <ImageView
                 android:layout_width="30dp"
                 android:layout_height="wrap_content"
-                />
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/reg_n_pwd" />
 
             <EditText
                 android:id="@+id/reg_password"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:background="@null"
+                android:hint="请输入密码"
                 android:inputType="textPassword"
                 android:paddingLeft="5dp"
-                android:singleLine="true" 
-                android:hint="请输入密码"
-                />
+                android:singleLine="true"
+                android:textColor="#000000" />
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:orientation="horizontal"
-            android:padding="10dp" >
-            </LinearLayout>
-            
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@drawable/reg_et_bg"
-            android:orientation="horizontal"
-            android:padding="10dp" >
 
-            <ImageView 
-                android:src="@drawable/reg_nickname"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/corners_bg"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <ImageView
                 android:layout_width="30dp"
                 android:layout_height="wrap_content"
-                />
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/reg_n_username" />
 
             <EditText
                 android:id="@+id/reg_nickname"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:background="@null"
                 android:hint="请输入昵称"
                 android:paddingLeft="5dp"
-                android:singleLine="true" />
+                android:singleLine="true"
+                android:textColor="#000000" />
         </LinearLayout>
-        
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="20dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/corners_bg"
             android:orientation="horizontal"
-            android:padding="10dp" >
-            </LinearLayout>
-                    
-                <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@drawable/reg_et_bg"
-            android:orientation="horizontal"
-            android:padding="10dp" >
+            android:padding="5dp" >
 
-            <ImageView 
-                android:src="@drawable/reg_nickname"
+            <ImageView
                 android:layout_width="30dp"
                 android:layout_height="wrap_content"
-                />
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/reg_n_school" />
 
             <EditText
                 android:id="@+id/reg_schoolname"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:background="@null"
                 android:hint="请输入学校"
                 android:paddingLeft="5dp"
-                android:singleLine="true" />
+                android:singleLine="true"
+                android:textColor="#000000" />
         </LinearLayout>
-        
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:orientation="horizontal"
-            android:padding="10dp" >
-            </LinearLayout>
-            
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -151,16 +144,16 @@
             android:orientation="horizontal"
             android:padding="10dp" >
 
-    <Button
-        android:id="@+id/reg_btn"
-        android:layout_width="70dp"
-        android:layout_height="40dp"
-        android:background="@drawable/reg_bt_bg"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:text="注册" />
-	</LinearLayout>
+            <Button
+                android:id="@+id/reg_btn"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/corners_regbutton"
+                android:textColor="#FFFFFF"
+                android:text="注册" />
+        </LinearLayout>
     </LinearLayout>
-    
 
 </LinearLayout>
