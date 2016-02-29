@@ -154,13 +154,13 @@ public class MediaAdapter extends BaseAdapter {
 		 //可以关注，显示未关注
 		 if(isCanConcern==1)
 		 {
-			 cache.concernImageView.setImageBitmap(PicUtil.readBitMap(context, R.drawable.square_item_concernimg));
+			 cache.concernImageView.setImageBitmap(PicUtil.readBitMap(context, R.drawable.square_item_unconcernimg));
 			 cache.concernTextView.setText(R.string.concern_no);
 		 }
 		 //不能关注，显示已关注
 		 else if(isCanConcern==2)
 		 {
-			 cache.concernImageView.setImageBitmap(PicUtil.readBitMap(context, R.drawable.square_item_unconcernimg));
+			 cache.concernImageView.setImageBitmap(PicUtil.readBitMap(context, R.drawable.square_item_concernimg));
 			 cache.concernTextView.setText(R.string.concern_yes);
 		 }
 		 
@@ -300,7 +300,7 @@ public class MediaAdapter extends BaseAdapter {
 					{
 						//变为不能关注
 						isconcern=2;
-						((ImageView)v).setImageBitmap(PicUtil.readBitMap(context, R.drawable.square_item_unconcernimg));
+						((ImageView)v).setImageBitmap(PicUtil.readBitMap(context, R.drawable.square_item_concernimg));
 						concernTextView.setText(R.string.concern_yes);
 					}
 					//不能关注,显示已经未关注
@@ -308,7 +308,7 @@ public class MediaAdapter extends BaseAdapter {
 						
 						//变为可以关注
 						isconcern=1;
-						((ImageView)v).setImageBitmap(PicUtil.readBitMap(context, R.drawable.square_item_concernimg));
+						((ImageView)v).setImageBitmap(PicUtil.readBitMap(context, R.drawable.square_item_unconcernimg));
 						concernTextView.setText(R.string.concern_no);
 					}
 					

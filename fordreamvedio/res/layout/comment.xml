@@ -7,11 +7,10 @@
     android:background="#FFFFFF" >
 
     <RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/relativeLayout1"
         android:layout_width="fill_parent"
-    	android:layout_height="45dp"
-    	android:background="@drawable/topbg" >
+        android:layout_height="45dp"
+        android:background="#78ddab" >
 
         <RelativeLayout
             android:id="@+id/topmenu_positionlayout"
@@ -19,22 +18,15 @@
             android:layout_height="60dp"
             android:layout_centerHorizontal="true" >
 
-            <!-- <ImageView
-                android:id="@+id/topmenu_positionImage"
-                android:layout_width="80dp"
-                android:layout_height="30dp"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:src="@drawable/topmenu_square_title_img" /> -->
-            <TextView 
-		   		 android:layout_width="wrap_content"
-		    	 android:layout_height="wrap_content"
-		         android:text="评论"
-		         android:textSize="17dp"
-		    	 android:layout_gravity="center"
-		    	 android:layout_centerInParent="true"
-		    	 android:textColor="@android:color/white"
-		    	 android:textStyle="bold"
-		    	 />
+                android:layout_gravity="center"
+                android:text="评论"
+                android:textColor="@android:color/white"
+                android:textSize="17dp"
+                android:textStyle="bold" />
         </RelativeLayout>
 
         <ImageView
@@ -44,26 +36,22 @@
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
             android:src="@drawable/arrow_left" />
-
     </RelativeLayout>
 
     <RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_marginTop="45dp"
-        android:layout_marginBottom="50dp"
         android:id="@+id/comment_listView_relativeLayout"
-        android:orientation="vertical" >
-    
-        <ListView
-        android:id="@+id/comment_listView"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_below="@id/relativeLayout1"
-         />
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="45dp"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/comment_listView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
     </RelativeLayout>
- 
+
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -71,77 +59,74 @@
         android:layout_alignParentLeft="true"
         android:gravity="center_vertical|bottom" >
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_below="@id/comment_listView_relativeLayout"
-        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical" >
 
-	<RelativeLayout
-         android:layout_width="match_parent"
-     	 android:layout_height="220dp"
-     	 android:id="@+id/fragment_relative">
+            <RelativeLayout
+                android:id="@+id/fragment_relative"
+                android:layout_width="match_parent"
+                android:layout_height="220dp" >
 
-     <fragment
-         android:id="@+id/emojicons"
-         android:layout_width="match_parent"
-         android:layout_height="220dp"
-         android:layout_alignParentBottom="true"
-         android:layout_alignParentLeft="true"
-         class="com.rockerhieu.emojicon.EmojiconsFragment" />
+                <fragment
+                    android:id="@+id/emojicons"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    class="com.rockerhieu.emojicon.EmojiconsFragment" />
+            </RelativeLayout>
 
-     </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fragment_relative"
+                android:layout_gravity="bottom"
+                android:gravity="bottom" >
 
- <RelativeLayout
-     android:layout_width="fill_parent"
-     android:layout_height="wrap_content"
-     android:layout_below="@id/fragment_relative"
-     android:layout_gravity="bottom"
-     android:gravity="bottom" >
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/searchpopwindow_searchbarbackground" >
 
-     <RelativeLayout
-         android:layout_width="fill_parent"
-         android:layout_height="50dp"
-         android:layout_below="@id/fragment_relative"
-         android:layout_alignParentLeft="true"
-         android:background="@drawable/searchpopwindow_searchbarbackground" >
+                    <ImageView
+                        android:id="@+id/comment_show_emojicons"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/logo_qq" />
 
-         <ImageView
-             android:id="@+id/comment_show_emojicons"
-             android:layout_width="40dp"
-             android:layout_height="40dp"
-             android:layout_alignParentLeft="true"
-             android:layout_centerHorizontal="true"
-             android:layout_marginLeft="10dp"
-             android:src="@drawable/logo_qq" />
-         
-         <ImageView
-             android:id="@+id/comment_report_btn"
-             android:layout_width="40dp"
-             android:layout_height="40dp"
-             android:layout_alignParentRight="true"
-             android:layout_centerHorizontal="true"
-             android:layout_marginRight="10dp"
-             android:src="@drawable/square_item_comment" />
+                    <ImageView
+                        android:id="@+id/comment_report_btn"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/square_item_comment" />
 
-         <com.rockerhieu.emojicon.EmojiconEditText
-             android:id="@+id/comment_report_content"
-             android:layout_width="fill_parent"
-             android:layout_height="50dp"
-             android:layout_centerHorizontal="true"
-             android:layout_marginLeft="10dp"
-             android:layout_marginRight="10dp"
-             android:layout_toRightOf="@id/comment_show_emojicons"
-             android:layout_toLeftOf="@id/comment_report_btn"
-             android:background="@drawable/searchpopwindow_searchbarbackground"
-             android:hint="我想说..."
-             android:textSize="17dp"
-             emojicon:emojiconSize="28sp" />
-     </RelativeLayout>
+                    <com.rockerhieu.emojicon.EmojiconEditText
+                        android:id="@+id/comment_report_content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@id/comment_report_btn"
+                        android:layout_toRightOf="@id/comment_show_emojicons"
+                        android:background="@drawable/searchpopwindow_searchbarbackground"
+                        android:hint="我想说..."
+                        android:textSize="17dp"
+                        emojicon:emojiconSize="28sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
 
- </RelativeLayout>
-</LinearLayout>
-</RelativeLayout>
 </RelativeLayout>

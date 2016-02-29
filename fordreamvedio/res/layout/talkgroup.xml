@@ -30,7 +30,7 @@
    <LinearLayout 
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#FAEEDE"
+    android:background="#eeeeee"
     android:layout_alignParentBottom="true"
     android:orientation="horizontal" >
     <info.hoang8f.widget.FButton
@@ -41,7 +41,7 @@
         android:layout_marginLeft="10dp"
         android:textColor="@android:color/white"
         fbutton:shadowEnabled="true"
-        fbutton:buttonColor="#AC8969"
+        fbutton:buttonColor="#78ddab"
         fbutton:shadowHeight="3dp"
         android:textSize="12dp"
         android:text="新建群组" />
@@ -53,7 +53,7 @@
         android:layout_marginLeft="10dp"
         android:textColor="@android:color/white"
         fbutton:shadowEnabled="true"
-        fbutton:buttonColor="#AC8969"
+        fbutton:buttonColor="#78ddab"
         fbutton:shadowHeight="3dp"
         android:textSize="12dp"
         android:text="申请群组" />
@@ -65,7 +65,7 @@
         android:layout_marginLeft="10dp"
         android:textColor="@android:color/white"
         fbutton:shadowEnabled="true"
-        fbutton:buttonColor="#AC8969"
+        fbutton:buttonColor="#78ddab"
         fbutton:shadowHeight="3dp"
         android:textSize="12dp"
         android:text="搜索群组" />
@@ -78,7 +78,7 @@
         android:layout_marginRight="10dp"
         android:textColor="@android:color/white"
         fbutton:shadowEnabled="true"
-        fbutton:buttonColor="#AC8969"
+        fbutton:buttonColor="#78ddab"
         fbutton:shadowHeight="3dp"
         android:textSize="12dp"
         android:text="管理群组" />

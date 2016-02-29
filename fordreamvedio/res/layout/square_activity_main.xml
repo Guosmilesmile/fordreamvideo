@@ -4,7 +4,7 @@
     android:id="@+id/square_layout"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#FAEEDE" 
+    android:background="#eeeeee" 
      xmlns:listViewAttr="http://schemas.android.com/apk/res/cn.edu.xmu.ForDream"
     xmlns:app="http://schemas.android.com/apk/res/cn.edu.xmu.ForDream">
 
@@ -14,7 +14,7 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_alignParentLeft="true"
-        android:listSelector="#00000000"
+        android:listSelector="#eeeeee"
         android:drawSelectorOnTop="false"
         listViewAttr:isAutoLoadOnBottom="true"
         listViewAttr:isDropDownStyle="true"

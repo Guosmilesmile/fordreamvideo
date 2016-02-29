@@ -4,7 +4,7 @@
      xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="300dp"
     android:layout_height="wrap_content"
-     android:background="#FAEEDE"
+     android:background="#ffffff"
     android:orientation="vertical" 
     xmlns:app="http://schemas.android.com/apk/res/cn.edu.xmu.ForDream">
 
@@ -20,7 +20,7 @@
             android:paddingLeft="10dp"
             android:layout_alignParentLeft="true"
             fbutton:shadowEnabled="true"
-            fbutton:buttonColor="#AC8969"
+            fbutton:buttonColor="#78ddab"
             fbutton:shadowHeight="3dp"
             android:layout_centerVertical="true"
             android:layout_gravity="right|top" />     
@@ -36,7 +36,7 @@
             android:layout_toRightOf="@id/groupmessage_dialog_message"
             android:layout_alignParentRight="true"
             fbutton:shadowEnabled="true"
-            fbutton:buttonColor="#AC8969"
+            fbutton:buttonColor="#78ddab"
             fbutton:shadowHeight="3dp"
             android:layout_centerVertical="true"
             android:layout_gravity="right|top" />
@@ -55,7 +55,7 @@
             android:textColor="@android:color/white"
             android:text="关闭"
             fbutton:shadowEnabled="true"
-            fbutton:buttonColor="#AC8969"
+            fbutton:buttonColor="#78ddab"
             fbutton:shadowHeight="3dp"
             android:layout_gravity="center|top" />
 </LinearLayout>

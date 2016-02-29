@@ -125,7 +125,6 @@ public class SquareActivity extends Activity {
 	private Handler cHandler;
 	
 	
-	
 	//视频TAG标签存放map
 	private HashMap<Integer, String> popInfomap;
 	//顶部菜单                                 

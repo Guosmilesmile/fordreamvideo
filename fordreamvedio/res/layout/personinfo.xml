@@ -2,17 +2,16 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#FAEEDE"
+    android:background="#ffffff"
     android:orientation="vertical"
     android:id="@+id/personinfo_mainview"
     xmlns:listViewAttr="http://schemas.android.com/apk/res/cn.edu.xmu.ForDream"
      >
     <RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/relativeLayout1"
         android:layout_width="fill_parent"
     	android:layout_height="30dp"
-    	android:background="@drawable/topbg" >
+    	android:background="#78ddab" >
 
         <RelativeLayout
             android:id="@+id/topmenu_positionlayout"

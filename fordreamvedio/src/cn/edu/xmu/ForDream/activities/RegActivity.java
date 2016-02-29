@@ -19,6 +19,7 @@ import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 import cn.edu.xmu.ForDream.R;
 import cn.edu.xmu.ForDream.util.FinalUrl;
@@ -35,6 +36,7 @@ public class RegActivity extends Activity {
 	public EditText passwordEditText;
 	public EditText nicknameEditText;
 	public EditText schoolnameEditText;
+	public ImageView iv_back;
 	public Button button;
 	public ProgressDialog progressDialog;
 	public int regflag=0;//尚未注册
@@ -49,6 +51,7 @@ public class RegActivity extends Activity {
         passwordEditText=(EditText)this.findViewById(R.id.reg_password);
         nicknameEditText=(EditText)this.findViewById(R.id.reg_nickname);
         schoolnameEditText=(EditText)this.findViewById(R.id.reg_schoolname);
+        iv_back=(ImageView)this.findViewById(R.id.reg_top_back);
         //usernameEditText.setText("yun");
         //passwordEditText.setText("123456");
         //nicknameEditText.setText("lala");
@@ -57,6 +60,11 @@ public class RegActivity extends Activity {
 			public void onClick(View v) {
 				hideSoftInput(nicknameEditText);
 				reg();
+			}
+		});
+        iv_back.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				finish();
 			}
 		});
         

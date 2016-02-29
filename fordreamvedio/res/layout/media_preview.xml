@@ -132,7 +132,8 @@
                 android:id="@+id/record_preview_theme_bsmall"
                 style="@style/RecordThemeStyle"
                 android:drawableTop="@drawable/record_theme_bsmall"
-                android:text="@string/record_preview_theme_bsmall" />
+                android:text="@string/record_preview_theme_bsmall"
+                android:visibility="invisible" />
         </RadioGroup>
     </RelativeLayout>
 

@@ -115,7 +115,7 @@ public class CompanySquareActivity extends Activity {
 	private DropDownListView listView;                          //指向当前页面的listview
 	private SwipeListView friendlistview;
 	private MediaAdapter userInfoadapter;				//个人主页的listview适配器
-	private CompanyMediaAdapter mainAdapter;					//主界面的listview的适配器
+	private MediaAdapter mainAdapter;					//主界面的listview的适配器
 	private TalkGroupAdapter groupAdapter;					//讨论组的适配器
 	private SwipeAdapter swipeadapter;
 	private BaseAdapter adapter;		         //当前的适配器
@@ -198,7 +198,6 @@ public class CompanySquareActivity extends Activity {
        // footer = getLayoutInflater().inflate(R.layout.loadfooter, null);
         inflater=LayoutInflater.from(this);
         mainlayout=(RelativeLayout) findViewById(R.id.main_layout);
-        companyLayout=(RelativeLayout) inflater.inflate(R.layout.company_square_activity_main, null).findViewById(R.id.company_square_layout);
         squareLayout=(RelativeLayout) inflater.inflate(R.layout.square_activity_main, null).findViewById(R.id.square_layout);
         communityLayout=(RelativeLayout) inflater.inflate(R.layout.community, null).findViewById(R.id.community_layout
         		);
@@ -232,7 +231,7 @@ public class CompanySquareActivity extends Activity {
         //初始化群组的适配器
         groupAdapter=new TalkGroupAdapter(this, listItem, R.layout.talkgroup_item,handler);  
         //初始化广场和朋友圈的适配器
-        mainAdapter=new CompanyMediaAdapter(this, listItem, R.layout.company_square_item,handler); 
+        mainAdapter=new MediaAdapter(this, listItem, R.layout.square_item,handler); 
        
         bindSquareAdapter();
         
@@ -1301,7 +1300,7 @@ public class CompanySquareActivity extends Activity {
 			           int whichVideo = bundle.getInt("whichVideo");
 			           int commentNum=bundle.getInt("commentNum");
 			           View v=listView.getChildAt(whichVideo);
-			           TextView commenTextView=(TextView)v.findViewById(R.id.company_square_item_commentNum);
+			           TextView commenTextView=(TextView)v.findViewById(R.id.square_item_commentNum);
 			           commenTextView.setText(String.valueOf(Integer.valueOf(commenTextView.getText().toString())+commentNum));
 				}
 
@@ -1711,8 +1710,8 @@ public class CompanySquareActivity extends Activity {
         					for(int i=0;i<listView.getChildCount()&&firstItemid+i<itemNum;i++)
         					{
         						View v=listView.getChildAt(i);
-        						ImageView vedioImageView=(ImageView)v.findViewById(R.id.company_square_item_videoimageView);	
-        						SurfaceView surfaceView=(SurfaceView)v.findViewById(R.id.company_square_item_surfaceView);
+        						ImageView vedioImageView=(ImageView)v.findViewById(R.id.square_item_videoimageView);	
+        						SurfaceView surfaceView=(SurfaceView)v.findViewById(R.id.square_item_surfaceView);
         							Rect visibleRect=new Rect();
         							Rect drawRect=new Rect();
         							int location[]={0,0};
@@ -1933,7 +1932,7 @@ public class CompanySquareActivity extends Activity {
        
        userInfoListView.addHeaderView(userinfo_head);
      //  userInfoListView.addFooterView(footer);//添加页脚(放在ListView最后)
-       userInfoadapter=new MediaAdapter(CompanySquareActivity.this, listItem, R.layout.company_square_item,handler);  
+       userInfoadapter=new MediaAdapter(CompanySquareActivity.this, listItem, R.layout.square_item,handler);  
        userInfoListView.setAdapter(userInfoadapter);
      //  userInfoListView.removeFooterView(footer);  
        userInfoListView.setOnScrollListener(new ScrollListener());

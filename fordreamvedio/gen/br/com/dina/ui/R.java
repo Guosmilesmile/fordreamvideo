@@ -34,27 +34,27 @@ public final class R {
 		public static final int chevron_default_down = 0x7f020033;
 		public static final int chevron_white = 0x7f020034;
 		public static final int chevron_white_down = 0x7f020035;
-		public static final int icon = 0x7f0203b5;
+		public static final int icon = 0x7f0203b6;
 	}
 	public static final class id {
-		public static final int buttonsContainer = 0x7f0b00a0;
-		public static final int chevron = 0x7f0b00a6;
-		public static final int image = 0x7f0b00a2;
-		public static final int itemContainer = 0x7f0b00a1;
-		public static final int itemCount = 0x7f0b00a5;
-		public static final int scrollView = 0x7f0b0107;
-		public static final int subtitle = 0x7f0b00a4;
-		public static final int tableView = 0x7f0b01bd;
-		public static final int title = 0x7f0b00a3;
-		public static final int viewsContainer = 0x7f0b009f;
+		public static final int buttonsContainer = 0x7f0b00d0;
+		public static final int chevron = 0x7f0b00d6;
+		public static final int image = 0x7f0b00d2;
+		public static final int itemContainer = 0x7f0b00d1;
+		public static final int itemCount = 0x7f0b00d5;
+		public static final int scrollView = 0x7f0b0138;
+		public static final int subtitle = 0x7f0b00d4;
+		public static final int tableView = 0x7f0b01ee;
+		public static final int title = 0x7f0b00d3;
+		public static final int viewsContainer = 0x7f0b00cf;
 	}
 	public static final class layout {
-		public static final int list_container = 0x7f03001c;
-		public static final int list_item_bottom = 0x7f03001e;
-		public static final int list_item_middle = 0x7f03001f;
-		public static final int list_item_single = 0x7f030020;
-		public static final int list_item_top = 0x7f030021;
-		public static final int uitableview_activity = 0x7f03003b;
+		public static final int list_container = 0x7f03001e;
+		public static final int list_item_bottom = 0x7f030020;
+		public static final int list_item_middle = 0x7f030021;
+		public static final int list_item_single = 0x7f030022;
+		public static final int list_item_top = 0x7f030023;
+		public static final int uitableview_activity = 0x7f03003d;
 	}
 	public static final class string {
 		public static final int app_name = 0x7f070000;

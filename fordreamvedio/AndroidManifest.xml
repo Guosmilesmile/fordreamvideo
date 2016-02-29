@@ -117,6 +117,13 @@
             android:theme="@style/CameraTheme" >
         </activity>
         <activity
+            android:name=".activities.CollegeSquareActivity"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/CameraTheme" >
+        </activity>
+        <activity
             android:name=".activities.SubmitActivity"
             android:label="@string/app_name" >
         </activity>

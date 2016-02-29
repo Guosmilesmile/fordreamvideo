@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFFFFF" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/college_square_item_layout_frame"
+            android:layout_width="fill_parent"
+            android:layout_height="460dp"
+            android:padding="10dp" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="460dp" >
+
+                <SurfaceView
+                    android:id="@+id/college_square_item_surfaceView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="310dp" />
+
+                <master.flame.danmaku.ui.widget.DanmakuSurfaceView
+                    android:id="@+id/college_sv_danmaku"
+                    android:layout_width="fill_parent"
+                    android:layout_height="310dp" />
+
+                <ImageView
+                    android:id="@+id/college_square_item_videoimageView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="310dp"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/college_square_item_authorName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Jonsen"
+                    android:textColor="#333333"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/college_square_item_SchoolName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/college_square_item_authorName"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/college_square_item_authorName"
+                    android:text="学校"
+                    android:textColor="#333333"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:id="@+id/college_square_item_danmakulayout"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="5dp"
+                    android:visibility="invisible" >
+
+                    <ImageView
+                        android:id="@+id/college_square_item_danmaku"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+
+                    <TextView
+                        android:id="@+id/college_square_item_danmakuisshow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/college_square_item_danmaku"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/damaku_close"
+                        android:textColor="#333333"
+                        android:textSize="10dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/college_square_item_commentlayout"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:layout_alignTop="@id/college_square_item_danmakulayout"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/college_square_item_danmakulayout"
+                    android:visibility="invisible" >
+
+                    <TextView
+                        android:id="@+id/college_square_item_commentNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#333333"
+                        android:textSize="10dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/college_square_item_likelayout"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:layout_alignTop="@id/college_square_item_commentlayout"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/college_square_item_commentlayout"
+                    android:visibility="invisible" >
+
+                    <ImageView
+                        android:id="@+id/college_square_item_report"
+                        android:layout_width="70dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp" />
+
+                    <TextView
+                        android:id="@+id/college_square_item_likeNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#333333"
+                        android:textSize="10dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/college_square_item_concernlayout"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:layout_alignTop="@id/college_square_item_likelayout"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/college_square_item_likelayout"
+                    android:visibility="invisible" >
+
+                    <TextView
+                        android:id="@+id/college_square_item_concern_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#333333"
+                        android:textSize="10dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/college_square_item_toplayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="310dp" >
+
+                    <TextView
+                        android:id="@+id/college_square_item_time_head"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:text="发布时间："
+                        android:textColor="#333333"
+                        android:textSize="10dp"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/college_square_item_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/college_square_item_time_head"
+                        android:gravity="right"
+                        android:text="7月21日"
+                        android:textColor="#333333"
+                        android:textSize="10dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/college_square_item_playNumtail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:text="次播放"
+                        android:textColor="#333333"
+                        android:textSize="10dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/college_square_item_playNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/college_square_item_playNumtail"
+                        android:text="18.5万"
+                        android:textColor="#333333"
+                        android:textSize="10dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="3dp"
+                        android:background="#eeeeee" >
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/college_square_item_original_author_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="340dp"
+                    android:padding="5dp" >
+
+                    <RelativeLayout
+                        android:layout_width="100dp"
+                        android:layout_height="100dp" >
+
+                        <cn.edu.xmu.ForDream.util.RoundImageView
+                            android:id="@+id/college_square_item_autohorImg"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_centerInParent="true"
+                            android:background="#FFFFFF" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_centerVertical="true" >
+
+                            <TextView
+                                android:id="@+id/college_square_item_original_a"
+                                android:layout_width="160dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="10dp"
+                                android:text="视频作者："
+                                android:textColor="#333333"
+                                android:textSize="30px"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/college_square_item_original_author"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_below="@+id/college_square_item_original_a"
+                                android:layout_marginLeft="10dp"
+                                android:text="AAA"
+                                android:textColor="#333333"
+                                android:textSize="30px"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/college_square_item_concern"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/college_square_item_belowvedio"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="460dp" >
+
+            <LinearLayout
+                android:id="@+id/college_square_item_choose_vediocategory"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp" >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/square_item_label" />
+
+                <TextView
+                    android:id="@+id/college_square_item_vediocategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="1dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/college_square_item_positionlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp" >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/square_item_setposition" />
+
+                <TextView
+                    android:id="@+id/college_square_item_setpositionTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="1dp"
+                    android:textSize="20px"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/college_square_item_introduce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/college_square_item_belowvedio"
+            android:layout_marginLeft="20dp"
+            android:text="I will love you till the end of time.I would wait a million years"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/college_square_item_introduce"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/corners_bg_black" >
+
+                <RelativeLayout
+                    android:id="@+id/college_square_item_buttomlayout1"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/college_square_item_like"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/college_square_item_partitioning1"
+                    android:layout_width="1dp"
+                    android:layout_height="40dp"
+                    android:background="#bfbfbf"
+                    android:orientation="vertical" />
+
+                <RelativeLayout
+                    android:id="@+id/college_square_item_buttomlayout2"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentTop="@id/college_square_item_partitioning1"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/college_square_item_collect"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/college_square_item_partitioning2"
+                    android:layout_width="1dp"
+                    android:layout_height="40dp"
+                    android:background="#bfbfbf"
+                    android:orientation="vertical" />
+
+                <RelativeLayout
+                    android:id="@+id/college_square_item_buttomlayout3"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentTop="@id/college_square_item_partitioning1"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/college_square_item_share"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/college_square_item_partitioning3"
+                    android:layout_width="1dp"
+                    android:layout_height="40dp"
+                    android:background="#bfbfbf"
+                    android:orientation="vertical" />
+
+                <RelativeLayout
+                    android:id="@+id/college_square_item_buttomlayout4"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentTop="@id/college_square_item_partitioning1"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/college_square_item_other"
+                        android:layout_width="70dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/college_square_item_comment"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="8dp"
+        android:layout_marginTop="5dp"
+        android:background="#53d4ab" >
+    </RelativeLayout>
+
+</LinearLayout>
